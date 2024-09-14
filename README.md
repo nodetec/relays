@@ -39,7 +39,11 @@ If you just want to know enough to get started, read the following sections to g
 
 - [Remote access](https://relayrunner.org/server/remote-access)
 
-You should then be able to run the installation command above and get started.
+You should then be able to run Relay Wizard:
+
+```bash
+curl -sL https://relayrunner.org/relaywizard.sh | bash
+```
 
 ## Contribute
 
