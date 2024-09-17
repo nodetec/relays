@@ -13,17 +13,17 @@
       <img alt="Issues" src="https://img.shields.io/github/issues/nodetec/relays?style=for-the-badge&logo=bilibili&color=F5E0DC&logoColor=D9E0EE&labelColor=302D41" />
     </a>
     <a href="https://github.com/nodetec/relays">
-      <img alt="Repo Size" src="https://img.shields.io/github/repo-size/nodetec/relays?color=%23DDB6F2&label=SIZE&logo=codesandbox&style=for-the-badge&logoColor=D9E0EE&labelColor=302D41" />
+      <img alt="Repo size" src="https://img.shields.io/github/repo-size/nodetec/relays?color=%23DDB6F2&label=SIZE&logo=codesandbox&style=for-the-badge&logoColor=D9E0EE&labelColor=302D41" />
     </a>
 </div>
 
 Relays is used to host Nostr relay binaries.
 
-The binaries have been tested with and are used by [Relay Wizard](https://github.com/nodetec/relaywizard) which is a CLI tool that helps you bootstrap a [Nostr](https://nostr.com/) relay.
+The binaries have been tested with and are used by [Relay Wizard](https://github.com/nodetec/relaywizard "Relay Wizard") which is a CLI tool that helps you bootstrap a [Nostr](https://nostr.com/ "Nostr") relay.
 
 ## Download
 
-To download a relay binary navigate to the [Releases](https://github.com/nodetec/relays/releases) page and click on the binary you want to download.
+To download a relay binary navigate to the [Releases](https://github.com/nodetec/relays/releases "Releases") page and click on the binary you want to download.
 
 Alternatively, you can use Relay Wizard which will download the binary for your preferred relay implementation as well as bootstrap the rest of the relay.
 
@@ -130,15 +130,15 @@ By completing the above steps you will have successfully verified the integrity 
 
 ## Learn More
 
-If you want to learn more about how to setup a relay from scratch, check out [Relay Runner](https://relayrunner.org)
+If you want to learn more about how to setup a relay from scratch, check out [Relay Runner](https://relayrunner.org "Relay Runner")
 
 If you just want to know enough to get started, read the following sections to get a server, hook up a domain name and setup remote access:
 
-- [Get a server](https://relayrunner.org/server/get-a-server)
+- [Get a server](https://relayrunner.org/server/get-a-server "Get a server")
 
-- [Get a domain](https://relayrunner.org/server/domain-name)
+- [Get a domain](https://relayrunner.org/server/domain-name "Get a domain")
 
-- [Remote access](https://relayrunner.org/server/remote-access)
+- [Remote access](https://relayrunner.org/server/remote-access "Remote access")
 
 You should then be able to run Relay Wizard:
 
