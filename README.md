@@ -76,14 +76,14 @@ gpg --verify relays-x.x.x-manifest.sha512sum.asc
 Here's the command to run for the latest version of `relays`:
 
 ```sh
-gpg --verify relays-0.1.0-manifest.sha512sum.asc
+gpg --verify relays-0.3.0-manifest.sha512sum.asc
 ```
 
 You should see output similar to the following if the verification was successful:
 
 ```sh
-gpg: assuming signed data in 'relays-0.1.0-manifest.sha512sum'
-gpg: Signature made Sat Sep 14 21:12:34 2024 EDT
+gpg: assuming signed data in 'relays-0.3.0-manifest.sha512sum'
+gpg: Signature made Thu 03 Oct 2024 01:29:21 PM UTC
 gpg:                using RSA key 252F57B9DCD920EBF14E6151A8841CC4D10CC288
 gpg: Good signature from "NODE-TEC Devs <devs@node-tec.com>" [unknown]
 gpg:                 aka "[jpeg image of size 5143]" [unknown]
@@ -113,15 +113,17 @@ sha512sum --check relays-x.x.x-manifest.sha512sum
 Here's the command to run for the latest version of `relays`:
 
 ```sh
-sha512sum --check relays-0.1.0-manifest.sha512sum
+sha512sum --check relays-0.3.0-manifest.sha512sum
 ```
 
 If the verification was successful you should see the output similar to the following:
 
 ```sh
-khatru29-0.4.0-x86_64-linux-gnu.tar.gz: OK
-khatru-pyramid-0.0.5-x86_64-linux-gnu.tar.gz: OK
-strfry-0.9.7-x86_64-linux-gnu.tar.gz: OK
+khatru-pyramid-0.1.0-x86_64-linux-gnu.tar.gz: OK
+strfry-1.0.1-x86_64-linux-gnu.tar.gz: OK
+relay29-0.4.0-khatru29-x86_64-linux-gnu.tar.gz: OK
+relay29-0.4.0-strfry29-x86_64-linux-gnu.tar.gz: OK
+wot-relay-0.1.12-x86_64-linux-gnu.tar.gz: OK
 ```
 
 By completing the above steps you will have successfully verified the integrity of the binaries.
