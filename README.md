@@ -35,13 +35,13 @@ Before running the binaries, you should first verify their authenticity. This wi
 
 #### Arch
 
-```sh
+```bash
 sudo pacman -S gnupg
 ```
 
 #### Debian/Ubuntu
 
-```sh
+```bash
 sudo apt install -y gnupg
 ```
 
@@ -49,19 +49,19 @@ sudo apt install -y gnupg
 
 #### Arch
 
-```sh
+```bash
 sudo pacman -S curl
 ```
 
 #### Debian/Ubuntu
 
-```sh
+```bash
 sudo apt install -y curl
 ```
 
 Now you need to import the public key that signed the manifest file which you can do by running the following command:
 
-```sh
+```bash
 curl https://keybase.io/nodetec/pgp_keys.asc | gpg --import
 ```
 
@@ -69,21 +69,21 @@ You're now ready to verify the manifest file. You will need to have the `relays-
 
 To verify the manifest file run the following command:
 
-```sh
+```bash
 gpg --verify relays-x.x.x-manifest.sha512sum.asc
 ```
 
 Here's the command to run for the latest version of `relays`:
 
-```sh
-gpg --verify relays-0.3.0-manifest.sha512sum.asc
+```bash
+gpg --verify relays-0.4.0-manifest.sha512sum.asc
 ```
 
 You should see output similar to the following if the verification was successful:
 
-```sh
-gpg: assuming signed data in 'relays-0.3.0-manifest.sha512sum'
-gpg: Signature made Thu 03 Oct 2024 01:29:21 PM UTC
+```bash
+gpg: assuming signed data in 'relays-0.4.0-manifest.sha512sum'
+gpg: Signature made Sat 05 Oct 2024 08:43:11 AM UTC
 gpg:                using RSA key 252F57B9DCD920EBF14E6151A8841CC4D10CC288
 gpg: Good signature from "NODE-TEC Devs <devs@node-tec.com>" [unknown]
 gpg:                 aka "[jpeg image of size 5143]" [unknown]
@@ -93,7 +93,7 @@ Primary key fingerprint: 04BD 8C20 598F A5FD DE19  BECD 8F24 69F7 1314 FAD7
 
 > Unless you tell GnuPG to trust the key, you'll see a warning similar to the following:
 
-```sh
+```bash
 gpg: WARNING: This key is not certified with a trusted signature!
 gpg:          There is no indication that the signature belongs to the owner.
 ```
@@ -106,24 +106,25 @@ You have now verified the signature of the manifest file which ensures the integ
 
 To verify the binaries you'll need to recompute the SHA512 hashes of the files, compare them with the corresponding hashes in the manifest file, and ensure they match exactly which you can do by running the following command:
 
-```sh
+```bash
 sha512sum --check relays-x.x.x-manifest.sha512sum
 ```
 
 Here's the command to run for the latest version of `relays`:
 
-```sh
-sha512sum --check relays-0.3.0-manifest.sha512sum
+```bash
+sha512sum --check relays-0.4.0-manifest.sha512sum
 ```
 
 If the verification was successful you should see the output similar to the following:
 
-```sh
+```bash
 khatru-pyramid-0.1.0-x86_64-linux-gnu.tar.gz: OK
+nostr-rs-relay-0.9.0-x86_64-linux-gnu.tar.gz: OK
 strfry-1.0.1-x86_64-linux-gnu.tar.gz: OK
+wot-relay-0.1.12-x86_64-linux-gnu.tar.gz: OK
 relay29-0.4.0-khatru29-x86_64-linux-gnu.tar.gz: OK
 relay29-0.4.0-strfry29-x86_64-linux-gnu.tar.gz: OK
-wot-relay-0.1.12-x86_64-linux-gnu.tar.gz: OK
 ```
 
 By completing the above steps you will have successfully verified the integrity of the binaries.
