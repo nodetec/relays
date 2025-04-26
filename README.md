@@ -1,5 +1,5 @@
 <div align="center"><p>
-    <h1>Relays 📡</h1>
+    <h1>📡 Relays</h1>
     <a href="https://github.com/nodetec/relays/releases/latest">
       <img alt="Latest release" src="https://img.shields.io/github/v/release/nodetec/relays?style=for-the-badge&logo=starship&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41" />
     </a>
@@ -76,14 +76,14 @@ gpg --verify relays-x.x.x-manifest.sha512sum.asc
 Here's the command to run for the latest version of `relays`:
 
 ```bash
-gpg --verify relays-0.4.0-manifest.sha512sum.asc
+gpg --verify relays-0.5.0-manifest.sha512sum.asc
 ```
 
 You should see output similar to the following if the verification was successful:
 
 ```bash
-gpg: assuming signed data in 'relays-0.4.0-manifest.sha512sum'
-gpg: Signature made Sat 05 Oct 2024 08:43:11 AM UTC
+gpg: assuming signed data in 'relays-0.5.0-manifest.sha512sum'
+gpg: Signature made Sat 26 Apr 2025 10:00:18 PM UTC
 gpg:                using RSA key 252F57B9DCD920EBF14E6151A8841CC4D10CC288
 gpg: Good signature from "NODE-TEC Devs <devs@node-tec.com>" [unknown]
 gpg:                 aka "[jpeg image of size 5143]" [unknown]
@@ -113,18 +113,18 @@ sha512sum --check relays-x.x.x-manifest.sha512sum
 Here's the command to run for the latest version of `relays`:
 
 ```bash
-sha512sum --check relays-0.4.0-manifest.sha512sum
+sha512sum --check relays-0.5.0-manifest.sha512sum
 ```
 
 If the verification was successful you should see the output similar to the following:
 
 ```bash
-khatru-pyramid-0.1.0-x86_64-linux-gnu.tar.gz: OK
+khatru-pyramid-0.2.2-x86_64-linux-gnu.tar.gz: OK
 nostr-rs-relay-0.9.0-x86_64-linux-gnu.tar.gz: OK
-strfry-1.0.1-x86_64-linux-gnu.tar.gz: OK
-wot-relay-0.1.12-x86_64-linux-gnu.tar.gz: OK
-relay29-0.4.0-khatru29-x86_64-linux-gnu.tar.gz: OK
-relay29-0.4.0-strfry29-x86_64-linux-gnu.tar.gz: OK
+strfry-1.0.4-x86_64-linux-gnu.tar.gz: OK
+wot-relay-0.1.16-x86_64-linux-gnu.tar.gz: OK
+relay29-0.5.1-khatru29-x86_64-linux-gnu.tar.gz: OK
+relay29-0.5.1-strfry29-x86_64-linux-gnu.tar.gz: OK
 ```
 
 By completing the above steps you will have successfully verified the integrity of the binaries.
