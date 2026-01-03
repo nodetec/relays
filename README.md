@@ -83,7 +83,7 @@ You should see output similar to the following if the verification was successfu
 
 ```bash
 gpg: assuming signed data in 'relays-0.6.0-manifest.sha512sum'
-gpg: Signature made Sat 03 Jan 2026 01:11:06 AM UTC
+gpg: Signature made Sat 03 Jan 2026 02:29:35 AM UTC
 gpg:                using RSA key 252F57B9DCD920EBF14E6151A8841CC4D10CC288
 gpg: Good signature from "NODE-TEC Devs <devs@node-tec.com>" [unknown]
 gpg:                 aka "[jpeg image of size 5143]" [unknown]
